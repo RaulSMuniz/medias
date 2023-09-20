@@ -19,7 +19,7 @@ public class Media {
                 m.nota1 = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor da primeira nota?\n"));
                 m.nota2 = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor da segunda nota?"));
                 if (m.nota1 < 0 || m.nota1 > 10 || m.nota2 < 0 || m.nota2 > 10){
-                    JOptionPane.showMessageDialog(null, "Insira uma nota válida.");
+                    JOptionPane.showMessageDialog(null, "Uma das notas inseridas é maior que 10 ou menor que zero. Insira uma nota válida.");
                 } else {
                     JOptionPane.showMessageDialog(null, "Sua média é: " + m.arit());
                     opcao = 3;
@@ -32,7 +32,7 @@ public class Media {
                 m.nota3 = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor da terceira nota?\n"
                         + "Peso da terceira nota: 4"));
                 if (m.nota1 < 0 || m.nota1 > 10 || m.nota2 < 0 || m.nota2 > 10 || m.nota3 < 0 || m.nota3 > 10){
-                    JOptionPane.showMessageDialog(null, "Insira uma nota válida.");
+                    JOptionPane.showMessageDialog(null, "Uma das notas inseridas é maior que 10 ou menor que zero. Insira uma nota válida.");
                 } else {              
                     JOptionPane.showMessageDialog(null, "Sua média ponderada é: "+ m.pond());
                     opcao = 3;
